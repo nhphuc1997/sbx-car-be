@@ -11,7 +11,7 @@ import { ApiTags } from '@nestjs/swagger';
     only: ["getOneBase", "getManyBase"]
   }
 })
-@Controller('/sbx-car/backend/cars')
+@Controller('sbx-car/backend/cars')
 export class CarController implements CrudController<Car> {
   constructor(public readonly service: CarService) { }
 }
