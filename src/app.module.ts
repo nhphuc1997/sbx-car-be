@@ -8,6 +8,7 @@ import { ExteriorModule } from './modules/exterior/exterior.module';
 import { VideoModule } from './modules/video/video.module';
 import { DocumentModule } from './modules/document/document.module';
 import { MechanicalModule } from './modules/mechanical/mechanical.module';
+import { CategoryModule } from './modules/category/category.module';
 
 @Module({
   imports: [
@@ -33,7 +34,8 @@ import { MechanicalModule } from './modules/mechanical/mechanical.module';
     ExteriorModule,
     VideoModule,
     DocumentModule,
-    MechanicalModule
+    MechanicalModule,
+    CategoryModule
   ],
 })
 export class AppModule { }
