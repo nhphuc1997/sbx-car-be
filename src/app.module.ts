@@ -5,6 +5,7 @@ import { BannerModule } from './modules/banner/banner.module';
 import { CarModule } from './modules/car/car.module';
 import { InteriorModule } from './modules/interior/interior.module';
 import { ExteriorModule } from './modules/exterior/exterior.module';
+import { VideoModule } from './modules/video/video.module';
 
 @Module({
   imports: [
@@ -28,6 +29,7 @@ import { ExteriorModule } from './modules/exterior/exterior.module';
     CarModule,
     InteriorModule,
     ExteriorModule,
+    VideoModule,
   ],
 })
 export class AppModule { }
