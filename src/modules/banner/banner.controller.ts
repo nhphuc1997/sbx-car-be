@@ -9,7 +9,7 @@ import { Banner } from 'src/entities/Banner.entity';
   model: { type: Banner },
   routes: { only: ["getManyBase"] }
 })
-@Controller('/sbx-car/backend/banner')
+@Controller('/sbx-car/backend/banners')
 export class BannerController implements CrudController<Banner> {
   constructor(public readonly service: BannerService) { }
 }

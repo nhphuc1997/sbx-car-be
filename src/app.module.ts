@@ -3,6 +3,8 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { BannerModule } from './modules/banner/banner.module';
 import { CarModule } from './modules/car/car.module';
+import { InteriorModule } from './modules/interior/interior.module';
+import { ExteriorModule } from './modules/exterior/exterior.module';
 
 @Module({
   imports: [
@@ -24,6 +26,8 @@ import { CarModule } from './modules/car/car.module';
     }),
     BannerModule,
     CarModule,
+    InteriorModule,
+    ExteriorModule,
   ],
 })
 export class AppModule { }
