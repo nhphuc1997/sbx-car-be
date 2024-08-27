@@ -7,6 +7,7 @@ import { InteriorModule } from './modules/interior/interior.module';
 import { ExteriorModule } from './modules/exterior/exterior.module';
 import { VideoModule } from './modules/video/video.module';
 import { DocumentModule } from './modules/document/document.module';
+import { MechanicalModule } from './modules/mechanical/mechanical.module';
 
 @Module({
   imports: [
@@ -31,7 +32,8 @@ import { DocumentModule } from './modules/document/document.module';
     InteriorModule,
     ExteriorModule,
     VideoModule,
-    DocumentModule
+    DocumentModule,
+    MechanicalModule
   ],
 })
 export class AppModule { }
