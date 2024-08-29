@@ -9,7 +9,7 @@ import { ApiTags } from '@nestjs/swagger';
   model: { type: Order },
   routes: { only: ["createOneBase"] }
 })
-@Controller('order')
+@Controller('sbx-car/backend/orders')
 export class OrderController implements CrudController<Order> {
   constructor(public readonly service: OrderService) { }
 }
