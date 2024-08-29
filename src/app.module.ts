@@ -10,6 +10,7 @@ import { DocumentModule } from './modules/document/document.module';
 import { MechanicalModule } from './modules/mechanical/mechanical.module';
 import { CategoryModule } from './modules/category/category.module';
 import { OrderModule } from './modules/order/order.module';
+import { BookTestModule } from './modules/book-test/book-test.module';
 
 @Module({
   imports: [
@@ -37,7 +38,8 @@ import { OrderModule } from './modules/order/order.module';
     DocumentModule,
     MechanicalModule,
     CategoryModule,
-    OrderModule
+    OrderModule,
+    BookTestModule
   ],
 })
 export class AppModule { }
