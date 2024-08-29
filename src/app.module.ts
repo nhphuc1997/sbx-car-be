@@ -9,6 +9,7 @@ import { VideoModule } from './modules/video/video.module';
 import { DocumentModule } from './modules/document/document.module';
 import { MechanicalModule } from './modules/mechanical/mechanical.module';
 import { CategoryModule } from './modules/category/category.module';
+import { OrderModule } from './modules/order/order.module';
 
 @Module({
   imports: [
@@ -35,7 +36,8 @@ import { CategoryModule } from './modules/category/category.module';
     VideoModule,
     DocumentModule,
     MechanicalModule,
-    CategoryModule
+    CategoryModule,
+    OrderModule
   ],
 })
 export class AppModule { }
