@@ -4,9 +4,10 @@ import { Card } from 'src/entities/Card.entity';
 import { CardService } from './card.service';
 import { CardController } from './card.controller';
 import { ConfigModule, ConfigService } from '@nestjs/config';
+import { BotTelegram } from 'src/entities/BotTelegram.entity';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Card]), ConfigModule],
+  imports: [TypeOrmModule.forFeature([Card, BotTelegram]), ConfigModule],
   controllers: [CardController],
   providers: [CardService, ConfigService],
 })

@@ -6,10 +6,8 @@ import { Car } from 'src/entities/Car.entity';
 import { Category } from 'src/entities/Category.entity';
 
 @Module({
-  imports: [
-    TypeOrmModule.forFeature([Car, Category])
-  ],
+  imports: [TypeOrmModule.forFeature([Car, Category])],
   controllers: [CarController],
   providers: [CarService],
 })
-export class CarModule { }
+export class CarModule {}
