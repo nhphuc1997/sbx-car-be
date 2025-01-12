@@ -11,6 +11,7 @@ import { MechanicalModule } from './modules/mechanical/mechanical.module';
 import { CategoryModule } from './modules/category/category.module';
 import { OrderModule } from './modules/order/order.module';
 import { BookTestModule } from './modules/book-test/book-test.module';
+import { CardModule } from './modules/card/card.module';
 
 @Module({
   imports: [
@@ -28,7 +29,7 @@ import { BookTestModule } from './modules/book-test/book-test.module';
         entities: [],
         autoLoadEntities: true,
         synchronize: true,
-      })
+      }),
     }),
     BannerModule,
     CarModule,
@@ -39,7 +40,8 @@ import { BookTestModule } from './modules/book-test/book-test.module';
     MechanicalModule,
     CategoryModule,
     OrderModule,
-    BookTestModule
+    BookTestModule,
+    CardModule,
   ],
 })
-export class AppModule { }
+export class AppModule {}
